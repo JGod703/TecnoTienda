@@ -1,0 +1,142 @@
+.search-bar {
+    position: relative;
+    width: 250px;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.autocomplete-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.autocomplete-item span {
+    color: #000;
+}
+
+.autocomplete-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.autocomplete-item img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.autocomplete-item:hover {
+    background-color: #f9f9f9;
+}
+
+.search-bar-container {
+    margin-top: 5px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search-input {
+    font-size: 14px;
+}
+
+#autocomplete-results {
+    max-height: 150px;
+}
+
+.best-deals {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.best-deals h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.deals-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.deal-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.deal-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.deal-item h3 {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #555;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.new-price {
+    font-size: 1.2em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.discount {
+    font-size: 0.9em;
+    color: #27ae60;
+}
+
+.button-buy {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-buy:hover {
+    background-color: #2980b9;
+}

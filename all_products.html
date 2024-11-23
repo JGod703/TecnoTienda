@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <img src="" alt="" />
+    <title>Todos - TecnoTienda</title>
+    <link rel="stylesheet" href="styles/style_index.css" />
+    <link rel="stylesheet" href="styles/style_product.css" />
+  </head>
+  <body>
+    <div class="main-content">
+      <header class="header">
+        <a href="index.html" class="logo-link">
+          <div class="logo">
+            <img
+              src="images/image.webp"
+              alt="Logo de TecnoTienda"
+              class="logo-image"
+            />
+            <span>TecnoTienda</span>
+          </div>
+        </a>
+        <nav class="nav">
+          <a href="nav/ofertas.html">Ofertas</a>
+          <a href="login.html">Cuenta</a>
+          <a href="nav/ayuda.html">Ayuda</a>
+          <a href="nav/acerca.html">Acerca</a>
+          <div class="search-bar">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Buscar productos..."
+              class="form-control"
+            />
+            <div id="autocomplete-results" class="autocomplete-container"></div>
+          </div>
+          <a href="cart.html" class="cart-icon">🛒</a>
+        </nav>
+      </header>
+
+      <a href="nav/ofertas.html">
+        <section class="banner">
+          <div class="slider">
+            <a href="nav/ofertas.html">
+            <div class="slides">
+              <div class="slide">
+                <img
+                  src="https://images.pcel.com/mkt/banner/2024/banner-los-mas-vendidos-2210-2024_front.png"
+                  alt="Imagen 1"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://images.pcel.com/mkt/banner/2024/banner-boletin-bf_front.png"
+                  alt="Imagen 2"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://images.pcel.com/mkt/banner/2024/banner-buen-fin-hardware_front.png"
+                  alt="Imagen 3"
+                />
+              </div>
+            </div>
+            </a>
+            <button class="prev" onclick="changeSlideManually(-1)">
+              &#10094;
+            </button>
+            <button class="next" onclick="changeSlideManually(1)">
+              &#10095;
+            </button>
+          </div>
+        </section>
+      </a>
+
+      <div class="filter-container">
+        <div class="filter-group">
+          <label for="filter-category">Categoría:</label>
+          <select id="filter-category" onchange="filtrarProductos()">
+            <option value="todos">Todos</option>
+            <option value="smartphones">Smartphones</option>
+            <option value="laptops">Laptops</option>
+            <option value="tablets">Tablets</option>
+            <option value="mobile-accessories">Accesorios móviles</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filter-rating">Valoracion:</label>
+          <select id="filter-rating" onchange="filtrarProductos()">
+            <option value="default">Por defecto</option>
+            <option value="asc">De menor a mayor</option>
+            <option value="desc">De mayor a menor</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filter-price">Precio:</label>
+          <select id="filter-price" onchange="filtrarProductos()">
+            <option value="default">Por defecto</option>
+            <option value="asc">De menor a mayor</option>
+            <option value="desc">De mayor a menor</option>
+          </select>
+        </div>
+      </div>
+
+      <section class="products">
+        <h2>Todos los productos</h2>
+        <div class="product-list" id="products-container"></div>
+        <a href="#" class="view-more">Ver todos los productos</a>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-columns">
+        <div class="column">
+          <h3>Información</h3>
+          <ul>
+            <li>
+              <a href="nav/acerca.html" style="color: rgb(255, 255, 255)">Sobre Nosotros</a>
+            </li>
+            <li>Email: TecnoTienda@gmail.com</li>
+            <li><a href="nav/ayuda.html" style="color: white">Garantias</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Laptops</h3>
+          <ul>
+            <li>
+              <a href="all_products.html" style="color: rgb(255, 255, 255)"
+                >Apple</a
+              >
+            </li>
+            <li>
+              <a href="all_products.html" style="color: rgb(255, 255, 255)"
+                >Asus</a
+              >
+            </li>
+            <li>
+              <a href="all_products.html" style="color: rgb(255, 255, 255)"
+                >Huawei</a
+              >
+            </li>
+            <li>
+              <a href="all_products.html" style="color: rgb(255, 255, 255)"
+                >Lenovo</a
+              >
+            </li>
+            <li>
+              <a href="all_products.html" style="color: rgb(255, 255, 255)"
+                >Dell</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Celulares</h3>
+          <ul>
+            <li>
+              <a href="all_products.html" style="color: rgb(255, 255, 255)"
+                >Samsung</a
+              >
+            </li>
+            <li>
+              <a href="all_products.html" style="color: rgb(255, 255, 255)"
+                >Apple</a
+              >
+            </li>
+            <li>
+              <a href="all_products.html" style="color: rgb(255, 255, 255)"
+                >Oppo</a
+              >
+            </li>
+            <li>
+              <a href="all_products.html" style="color: rgb(255, 255, 255)"
+                >Realme</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Dirección</h3>
+          <p>
+            Pedro de Alba, San Nicolas<br />
+            De Los Garza, NL<br />
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2024 TecnoTienda</p>
+      </div>
+    </footer>
+    <script src="scripts/API_AllProducts.js"></script>
+    <script src="scripts/script_index.js"></script>
+    <script src="scripts/script_search.js"></script>
+  </body>
+</html>

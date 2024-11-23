@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acerca - TecnoTienda</title>
+    <link rel="stylesheet" href="style_nav.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="../index.html" class="logo-link">
+        <div class="logo">
+          <img
+            src="../images/image.webp"
+            alt="Logo de TecnoTienda"
+            class="logo-image"
+          />
+          <span>TecnoTienda</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="ofertas.html">Ofertas</a>
+        <a href="cuenta.html">Cuenta</a>
+        <a href="ayuda.html">Ayuda</a>
+        <a href="acerca.html">Acerca</a>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Buscar productos..."
+            class="form-control"
+          />
+          <div id="autocomplete-results" class="autocomplete-container"></div>
+        </div>
+        <a href="../cart.html" class="cart-icon">🛒</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section class="banner">
+        <div class="slider">
+          <a href="ofertas.html">
+          <div class="slides">
+            <div class="slide">
+              <img
+                src="https://images.pcel.com/mkt/banner/2024/banner-los-mas-vendidos-2210-2024_front.png"
+                alt="Imagen 1"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://images.pcel.com/mkt/banner/2024/banner-boletin-bf_front.png"
+                alt="Imagen 2"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://images.pcel.com/mkt/banner/2024/banner-buen-fin-hardware_front.png"
+                alt="Imagen 3"
+              />
+            </div>
+          </div>
+          </a>
+          <button class="prev" onclick="changeSlideManually(-1)">
+            &#10094;
+          </button>
+          <button class="next" onclick="changeSlideManually(1)">
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <section class="about">
+        <h2>Nuestra Historia</h2>
+        <br />
+        <p>
+          En TecnoTienda nacimos con una pasión por la tecnología y un deseo de
+          hacerla accesible para todos. Fundada en 2020, nuestra tienda comenzó
+          como un pequeño proyecto de emprendedores locales, que querían ofrecer
+          productos electrónicos de calidad a precios competitivos. Desde el
+          inicio, nos enfocamos en brindar una experiencia de compra única,
+          enfocándonos en un catálogo curado de productos que van desde gadgets
+          innovadores hasta dispositivos de última generación.
+        </p>
+        <br />
+        <p>
+          Hoy, TecnoTienda ha crecido y se ha consolidado como un referente en
+          el mercado de la tecnología en línea. Nuestra misión es seguir
+          ofreciendo productos de alta calidad, soluciones personalizadas y un
+          excelente servicio al cliente, siempre con el objetivo de mejorar la
+          vida cotidiana de nuestros usuarios.
+        </p>
+        <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+        />
+        <br />
+        <br />
+        <h2>Misión</h2>
+        <p>
+          En TecnoTienda, nuestra misión es ofrecer a nuestros clientes una
+          amplia gama de productos electrónicos de alta calidad y tecnología de
+          punta, con un enfoque en la innovación, la accesibilidad y la
+          satisfacción del cliente. Nos esforzamos por brindar un servicio de
+          atención al cliente excepcional, asesorando a cada persona para que
+          tome decisiones informadas en sus compras tecnológicas. Queremos ser
+          el puente entre nuestros clientes y las últimas tendencias
+          tecnológicas, ayudándoles a disfrutar de un estilo de vida más
+          conectado y eficiente.
+        </p>
+        <img
+          src="https://images.pcel.com/mkt/pcel1.5/img/banner/quienes-somos-servicios_.jpg"
+          alt=""
+        />
+        <br /><br />
+        <h2>Visión</h2>
+        <p>
+          En los próximos años, TecnoTienda aspira a ser la tienda en línea
+          líder en tecnología en América Latina, siendo reconocida por su
+          calidad, confiabilidad y excelente servicio. Queremos expandirnos
+          globalmente, ofreciendo soluciones electrónicas accesibles y de
+          vanguardia, con un enfoque en sostenibilidad y en la mejora constante
+          de la experiencia de nuestros clientes. Nuestro objetivo es
+          convertirnos en la primera opción para quienes buscan tecnología
+          avanzada, con un compromiso continuo hacia la innovación y la
+          satisfacción del cliente.
+        </p>
+        <img
+          src="https://images.pcel.com/mkt/pcel1.5/img/banner/quienes-somos-negocios_.jpg"
+        />
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-columns">
+        <div class="column">
+          <h3>Información</h3>
+          <ul>
+            <li>
+              <a href="acerca.html" style="color: rgb(255, 255, 255)">Sobre Nosotros</a>
+            </li>
+            <li>Email: TecnoTienda@gmail.com</li>
+            <li><a href="ayuda.html" style="color: white">Garantias</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Laptops</h3>
+          <ul>
+            <li><a href="../all_products.html" style="color: rgb(255, 255, 255)">Apple</a></li>
+            <li><a href="../all_products.html" style="color: rgb(255, 255, 255)">Asus</a></li>
+            <li><a href="../all_products.html" style="color: rgb(255, 255, 255)">Huawei</a></li>
+            <li><a href="../all_products.html" style="color: rgb(255, 255, 255)">Lenovo</a></li>
+            <li><a href="../all_products.html" style="color: rgb(255, 255, 255)">Dell</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Celulares</h3>
+          <ul>
+            <li><a href="../all_products.html" style="color: rgb(255, 255, 255)">Samsung</a></li>
+            <li><a href="../all_products.html" style="color: rgb(255, 255, 255)">Apple</a></li>
+            <li><a href="../all_products.html" style="color: rgb(255, 255, 255)">Oppo</a></li>
+            <li><a href="../all_products.html" style="color: rgb(255, 255, 255)">Realme</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Dirección</h3>
+          <p>
+            Pedro de Alba, San Nicolas<br />
+            De Los Garza, NL<br />
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2024 TecnoTienda</p>
+      </div>
+    </footer>
+    <script src="../scripts/script_index.js"></script>
+    <script src="../scripts/script_searchNav.js"></script>
+  </body>
+</html>

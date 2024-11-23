@@ -1,0 +1,129 @@
+.account-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.account-info {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+#account-email {
+  font-weight: normal;
+  color: #555;
+}
+
+.orders-section {
+  margin-top: 20px;
+}
+
+#orders-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pedido {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pedido h3 {
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.pedido p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.producto {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.producto img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.producto p {
+  font-size: 0.9rem;
+}
+
+.producto strong {
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .account-container {
+    padding: 30px;
+  }
+
+  .account-info {
+    padding: 20px;
+  }
+
+  .orders-section {
+    margin-top: 40px;
+  }
+
+  #orders-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .pedido {
+    flex: 1 1 45%;
+  }
+
+  .producto {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .producto img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .pedido h3 {
+    font-size: 2rem;
+  }
+
+  .pedido p {
+    font-size: 1.1rem;
+  }
+}
+
